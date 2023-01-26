@@ -275,12 +275,13 @@ nav ul li a:hover::after{
     .text-box p {
         font-size: 1.5rem;
         font-weight: 600;
-        margin-bottom: -1rem;
+        margin-bottom: 0rem;
     }
     
     .text-box h1 {
         font-size: 2.5rem;
         margin-left: 1px;
+        padding-bottom: 6rem;
     }
 
     .text-box h3{
