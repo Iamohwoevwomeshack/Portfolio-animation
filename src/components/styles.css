@@ -323,7 +323,7 @@ nav ul li a:hover::after{
         position: absolute;
         display: flex;
         right: 67%;
-        bottom: 3%;
+        bottom: 7%;
     }
     
     .social-icons .img{
