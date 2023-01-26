@@ -23,7 +23,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     padding: 5px 0;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 
 .logo {
@@ -334,7 +334,7 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width: 500px){
     .logo{
-        margin-top: -3rem;
+        margin-top: -2rem;
         margin-right: 0px;
     }
 }
