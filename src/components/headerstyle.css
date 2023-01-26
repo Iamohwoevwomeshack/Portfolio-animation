@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-container{
+    width: 100%;
+}
+
+.navbar-container > nav > .nav-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    padding-top: 10px;
+}
+
+
+.hambuger{
+    display: block;
+    user-select: none;
+    appearance: none;
+
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.hambuger span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin-bottom: 5px;
+
+    background-color: white;
+    border-radius: 3px;
+    transform-origin: 0 0;
+}
+
+.hambuger:hover span:nth-child(2){
+    transform: translateX(10px);
+    background-color: rgb(255, 153, 0);
+}
+
+.active-hamburger:hover span{
+    background-color: rgb(255, 153, 0);
+}
+
+.active-hamburger span:nth-child(1){
+    transform: translate(1px, -1px) rotate(45deg);
+}
+
+.active-hamburger span:nth-child(3){
+    transform: translate(-2px, 1px) rotate(-45deg);
+}
+
+.active-hamburger span:nth-child(2){
+    opacity: 0;
+}
+
+.nav-dropdown{
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: auto;
+    height: 100vh;
+    background-size: cover;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: -4rem;
+    margin-right: -4rem;
+    padding-left: 0rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.nav-dropdown > ul > li {
+    padding-top: 1rem;
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.nav-dropdown > ul > li > a{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(16, 35, 141);
+}
+
+.nav-dropdown > ul > li > a:hover{
+    color: rgb(255, 153, 0);
+    transition: .5s;
+}
+
+@media (min-width: 820px){
+    .hambuger{
+        display: none;
+    }
+
+    .nav-menu{
+        display: block;
+    }
+
+    .nav-dropdown{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .hambuger{
+        margin-top: -1px;
+    }
+}
